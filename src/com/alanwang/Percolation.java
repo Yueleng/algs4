@@ -14,6 +14,21 @@
  * ==> FAILED
  *
  * Possible Improvements: Can we construct only one WeightedQuickUnionUF?
+ *
+ * Key part of this assignment:
+ *   How to implement the isFull method?
+ *   I firstly use uf.find(0) == uf.find(index(row, col));
+ *   But it failed for this case
+ *   a-aaa
+ *   a-aaa
+ *   a-aaa
+ *   a-a-a
+ *   a-a-a
+ *   where '-' is open and 'a' is closed. When asked if (row5, col4) isFull
+ *   The answer uf.find(0) == uf.find(index(row, col)) says yes! Since it connects the bottom virtual node.
+ *   But actually it's NO! Thus I have to construct another uf2 with only the top virtual node but
+ *     without bottom virtual node. Still this idea doubles the Memory Usage which is SAD! :-(
+ *
  */
 
 package com.alanwang;
