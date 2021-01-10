@@ -1,11 +1,19 @@
 /**
+ * Week 1 Assignment: Percolation
+ *
+ * Assingment url: https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php
+ *
  * Notice:
  * Comment the package statement for submission!
+ *
+ * Score: 98 / 100
  *
  * Defect:
  * Test 2 (bonus): check that total memory <= 11 n^2 + 128 n + 1024 bytes
  *    -  failed memory test for n = 64
  * ==> FAILED
+ *
+ * Possible Improvements: Can we construct only one WeightedQuickUnionUF?
  */
 
 package com.alanwang;

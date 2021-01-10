@@ -1,11 +1,19 @@
 /**
+ * Week 1 Assignment: Percolation
+ *
+ * Assingment url: https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php
+ *
  * Notice:
  * Comment the package statement for submission!
+ *
+ * Score: 98 / 100
  *
  * Defect:
  * Test 2 (bonus): check that total memory <= 11 n^2 + 128 n + 1024 bytes
  *    -  failed memory test for n = 64
  * ==> FAILED
+ *
+ * Possible Improvements: Can we construct only one WeightedQuickUnionUF?
  */
 
 package com.alanwang;
@@ -29,7 +37,7 @@ public class Percolation {
         // index n*n+1 means bottom virtual site
         uf = new WeightedQuickUnionUF(n * n + 2);
 
-        // The if only for isFull() call, this data structure
+        // This is only for isFull() call, this data structure
         // does not include the bottom virtual point
         uf2 = new WeightedQuickUnionUF(n * n + 1);
 
@@ -49,9 +57,7 @@ public class Percolation {
      * @return index in array from (row, col)
      */
     private int index(int row, int col) {
-        if (row <= 0 || row > n || col <= 0 || col > n) {
-            throw new IllegalArgumentException();
-        }
+        if (row <= 0 || row > n || col <= 0 || col > n) throw new IllegalArgumentException();
         return (row-1) * n + col;
     }
 
