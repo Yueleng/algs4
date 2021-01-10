@@ -6,7 +6,7 @@
  * Notice:
  * Comment the package statement for submission!
  *
- * Score: 98 / 100
+ * Score: 100 / 100
  *
  * Defect:
  * Test 2 (bonus): check that total memory <= 11 n^2 + 128 n + 1024 bytes
