@@ -1,7 +1,7 @@
 /**
  * Week 1 Assignment: Percolation
  *
- * Assingment url: https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php
+ * Assignment url: https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php
  *
  * Notice:
  * Comment the package statement for submission!

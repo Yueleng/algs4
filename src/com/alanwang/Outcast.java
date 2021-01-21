@@ -1,7 +1,7 @@
 /**
  * Week 7 Assignment: WordNet
  *
- * Assingment url: https://coursera.cs.princeton.edu/algs4/assignments/wordnet/specification.php
+ * Assignment url: https://coursera.cs.princeton.edu/algs4/assignments/wordnet/specification.php
  *
  * Notice:
  * Comment the package statement for submission!
