@@ -1,1 +1,4 @@
 *.class
+out/production/algs4/com/alanwang/Main.class
+out/production/algs4/com/alanwang/Percolation.class
+out/production/algs4/com/alanwang/PercolationStats.class
